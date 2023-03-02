@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- build:css css/bootstrap.min.css -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- endbuild -->
+
+    <!-- build:css css/all.min.css -->
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- endbuild -->
+
+    <!-- build:css css/navbar.min.css -->
+    <link rel="stylesheet" href="./css/navbar.css">
+    <!-- endbuild -->
+
+    <!-- build:css css/styles.min.css -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- endbuild -->
+
+    <title>Questions4Me</title>
+  </head>
+  <body>
+    <header>
+      <div class="intro-navbar"> </div>
+      <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark box-shadow mb-3">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Answers4Me</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h2>Create a new question</h2>
+      <form id="questionForm">
+        <div class="create-question-form">
+            <div class="form-group" style="text-align: left;">
+              <input id="questionName" type="text" class="form-control form-primary" name="questionName" placeholder="Your name (optional)"/>
+              <small id="nameHelp" class="form-text text-muted">Si le das al hombre una mascara, hablará, si se la quitas, callará como el resto.</small>
+            </div>
+            <div class="form-group" style="text-align: left;">
+              <textarea id="questionContent" class="form-control form-primary" name="questionContent" rows="1" maxlength="400" rows="4" wrap="hard" placeholder="Question content..."></textarea>
+              <small id="questionContentHelp" class="form-text text-muted">Ojo con las chapas.</small>
+            </div>
+            <button id="btnSaveQuestion" type="submit" class="btn-question-primary btn-save-question">Save</button>
+        </div>
+      </form>
+      <div id="alertMessage" class="alert" role="alert"></div>
+    </div>
+
+    <a class="float-secondary">
+      <i class="fas fa-info fa-lg my-float"></i>
+    </a>
+    <a class="float-primary" href="questions.html">
+        <i class="fas fa-list-alt fa-lg my-float"></i>
+    </a>
+
+    <!-- build:js js/jquery.min.js -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js js/index.min.js -->
+    <script src="./js/index.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js js/popper.min.js -->
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js js/bootstrap.min.js -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
